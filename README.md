@@ -1,9 +1,17 @@
 # DueDateCalculator as Issue Tracker
 
-## How to install
+## Installation
 ```bash
-$ chmod +x composer.phar
-$ php composer.phar install
+chmod +x composer.phar
+php composer.phar install
+```
+
+## Test
+Code Coverage generate to `build/logs/coverage`
+```bash
+phpunit
+# OR
+./vendor/bin/phpunit
 ```
 
 ## Credits
