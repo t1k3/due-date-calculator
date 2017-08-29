@@ -10,10 +10,6 @@ class DueDateValidator implements ValidatorInterface
 {
     public function validateWorkingDays(array $workingDays)
     {
-        if (!is_array($workingDays)) {
-            throw new DueDateException('Working days must be array (of integers).');
-        }
-
         foreach ($workingDays as $day) {
             if (!is_integer($day)) {
                 throw new DueDateException(sprintf('Working day must be integer: %s', $day));

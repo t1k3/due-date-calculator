@@ -37,7 +37,15 @@ class DueDateValidatorTest extends TestCase
      */
     public function testValidateConfigWorkingHours($start, $end)
     {
-        $this->dueDateValidator->validateWorkingHours(['start' => $start, 'end' => $start]);
+        $this->dueDateValidator->validateWorkingHours(['start' => $start, 'end' => $end]);
+    }
+
+    /**
+     * @expectedException \NagySzilveszter\DueDate\Exceptions\DueDateException
+     */
+    public function testValidateConfigWorkingHoursInvalidArray()
+    {
+        $this->dueDateValidator->validateWorkingHours(['start' => 11]);
     }
 
     /**
