@@ -13,7 +13,7 @@ class DueDateConfig implements ConfigInterface
 
     private function __construct()
     {
-        $config = require __DIR__.'./config/due-date-calculator.php';
+        $config = require __DIR__.'/config/due-date-calculator.php';
         extract($config);
 
         $dueDateValidator = new DueDateValidator;
