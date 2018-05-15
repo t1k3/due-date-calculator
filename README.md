@@ -13,6 +13,3 @@ phpunit
 # OR
 ./vendor/bin/phpunit
 ```
-
-## Credits
-* [T1k3](https://github.com/t1k3hu)
